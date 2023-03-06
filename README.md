@@ -15,15 +15,5 @@
 
 ### 3. https://agro-kazakhstan.com/
 
-
-
-
-
-
-
-
-
-
-
-
-###.............................................
+## Tech stack
+### Node.js, Ejs, Javascript, HTML+CSS, PostgreSQL, API
