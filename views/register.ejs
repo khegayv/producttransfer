@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register to Selhoz</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-image: url('/public/images/farm-landscape.jpg');
+            background-size: cover;
+            font-family: "Open Sans", sans-serif;
+        }
+    
+        .container {
+            margin: 3rem auto;
+            width: 25%;
+            height: auto;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 0.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        h1 {
+            font-weight: bold;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #1abc9c;
+        }
+    
+        label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            width: 100%;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+    
+        button[type="submit"] {
+            background-color: #1abc9c;
+            color: #fff;
+            padding: 0.5rem 2rem;
+            border: none;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+    
+        button[type="submit"]:hover {
+            background-color: #148f77;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h1   h1 class="mb-4">Зарегистрируйтесь на портале</h1>
+                        <form method="POST" action="/register">
+
+                            <div class="form-group">
+                                <label for="name">Имя:</label>
+                                <input type="text" name="name" class="form-control" id="name" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="name">Фамилия:</label>
+                                <input type="text" name="surname" class="form-control" id="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">Мобильный номер:</label>
+                                <input type="text" name="phone_number" class="form-control" id="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Почта:</label>
+                                <input type="text" name="email" class="form-control" id="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Пароль:</label>
+                                <input type="password" name="password" class="form-control" id="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Далее</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4
+</body>
+</html>
